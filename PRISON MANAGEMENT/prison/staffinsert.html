@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Staff's Details Insertion</title>
+</head>
+<body bgcolor=#fffdd0>
+	<p align="right"><a href="summary.html">Home.</a></p>
+	<p align="right"><a href="page.html">Log out.</a></p>
+	<form action="staffinsert.php" method="post">
+<fieldset>
+		<legend align="center" style="font-size: 30px;"><b>Insertion of Staff's Details</b></legend>
+		<input type="button" onclick="location.href='afterhome2.html'" value="GO BACK <<" align="center" style="width: 150px;height: 50px;" align="center" bgcolor="yellow">
+
+	<table cellspacing="10" cellpadding="10">
+	
+	<tr>
+	<td><label for="name">Name of the Staff</label></td>
+	<td><input type="text" name="name" style="width: 300px;height: 20px;" required></td>
+	<td><label for="idno">Staff ID No.</label></td>
+	<td><input type="text" name="idno" id="demo"></td>
+	<td><input type="button" value="Genrate" onclick="random()"></td>
+	</tr>
+	
+	
+	<tr>
+	
+	<td><label for="ent">Date of Joining</label></td>
+	<td><input type="date" name="ent" required></td>
+	</tr>
+
+	
+	<tr>
+		<td>
+			
+			<label for="gender">Select gender</label></td>
+			
+			<td><input type="radio" name="gender" value="m" checked>
+			<label for="male">male</label>
+			<input type="radio" name="gender" value="f">
+			<label for="female">female</label></td>
+			
+		</td>
+			
+	</tr>
+		
+		<tr>
+		<td><label for="wad">Address</label></td>
+		<td><textarea name="wad" id="wad" cols="30" rows="10" style="width: 500px;height: 200px;" required></textarea></td>
+		<ensp>
+
+		</tr>
+	
+	
+	<tr>
+	
+	<tr>
+		
+		<td><label for="post">select post</label></td>
+		<td><select name="post">
+		<option value="Jailor">Jailor</option>
+		<option value="Prison Officer">Prison Officer</option>
+		<option value="Chief of police" selected>Chief of Police </option>
+		<option value="Correction officer">Correction officer</option>
+			</select>
+		</td>
+</tr>
+	<tr>
+		<td>
+			
+			<label for="shift">Select shift</label></td>
+			
+			<td><input type="radio" name="shift" value="morning" checked>
+			<label for="morning">Morning</label>
+			<input type="radio" name="shift" value="night">
+			<label for="night">Night</label></td>
+			
+		</td>
+			
+	</tr>
+
+	<tr><td><label for="mob">Mob No.</label></td>
+		<td><textarea name="mob" id="mob" cols="30" rows="5"  style="width: 250px;height: 70px;" ></textarea></td>
+	</tr>
+
+<tr>
+	<td>
+		<emsp>
+		<emsp>	
+		</td>
+
+		<td><emsp><ensp>
+			
+		</td>
+	<td><input type="submit" value="SUBMIT" align="center" style="width: 150px;height: 50px;" align="center">
+	</td>
+	
+</tr>
+
+</table>
+
+</form>
+</fieldset>
+<script>
+function random() {
+  var x = Math.floor(100 + Math.random() * 900);;
+  document.getElementById("demo").value = x;
+}
+</script>
+
+</body>
+</html>
